@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(227, 219, 219) no-repeat center center/cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+#navbar{
+    display: flex;
+    background-color: rgb(11 119 126);
+    padding-left: 8px;
+    padding-top: 5px;
+    margin: 0.3rem;
+    border-radius: 13px;
+    height: 3.1rem;
+}
+#navbar img{
+    height: 50px;
+}
+.brandName{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bree Serif', serif;
+}
+.left{
+    display: flex;
+    position:relative;
+    left: 11.5rem;
+}
+.left input{
+    width: 50rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.05rem;
+    font-family: 'Baloo Bhai 2','cursive';
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 7px;
+    width: 4rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    background-color: white;
+    text-align: center;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: rgb(11 119 126);
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+
+}
+#items{
+    display: flex;
+    flex-wrap:wrap;
+    background-color: white;
+    height: 39rem;
+    margin: 0.3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    margin: 2.5rem 6.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 12vh;
+    text-align:center;
+}
+.item img{
+    height: 5.2rem;
+    filter: invert(30%) sepia(86%) saturate(5394%) hue-rotate(170deg) brightness(87%) contrast(91%);
+}
+.item p{
+    font-family: 'Bree Serif', serif;
+    color: rgb(11 119 126);
+
+}
+.next{
+    margin: 2.5rem;
+    background-color: rgb(11 119 126);
+    height: 5rem;
+    border-radius: 1rem;
+}
+.next img{
+    filter: invert(100%) sepia(0%) saturate(1719%) hue-rotate(338deg) brightness(109%) contrast(100%);
+    height: 5.2rem;
+}
+.next p{
+    font-family: 'Bree Serif', serif;
+    color: rgb(11 119 126);
+}
+#slider {
+    background-color: rgb(11 119 126);
+    height: 35rem;
+    margin: 0.3rem;
+    padding-top: 9rem;
+    text-align: center;
+}
+#slider h1{
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+    color: aliceblue;
+}
+#slider p{
+    font-family: 'Baloo Bhai 2','cursive';
+    color: white;
+    font-size: 1.3rem;
+}
+#About{
+    background-color:rgb(11 119 126) ;
+    height: 35rem;
+    text-align: center;
+    justify-content: center;
+    margin: .3rem.3rem;
+    padding: 2rem;
+}
+#About h1{
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+    color: aliceblue;
+
+}
+#About p{
+    font-family: 'Baloo Bhai 2','cursive';
+    color: white;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    display: block;
+    color:aliceblue;
+    font-size: 1.3rem;
+    background-color: rgb(11 119 126) ;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Baloo Bhai 2','cursive';
+}
+#tu{
+    background-color:white;
+    height: 15rem;
+    text-align: center;
+    margin: .3rem.3rem;
+    padding: 3rem;
+}
+#tu h1{
+    font-size: 5rem;
+    font-family: 'Bree Serif', serif;
+    color: rgb(11 119 126)
+
+}
+
+@media only screen and (min-width:100px) and (max-width:1400px) {
+    html,body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #navbar{
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 7rem;
+    }
+    .left{
+        margin-right: 25%;
+        align-items: center;
+        justify-content: center;
+    }
+    .left input{
+        width:20rem;
+
+    }
+    #items{
+    height: 73rem;
+    }
+    #About{
+        height: 49rem;
+    }
+    #About p{
+        font-size: 1rem;
+    }
+    #tu{
+        height: 27rem;
+    }
+    
+}
+@media (max-width:705px){
+    #navbar{
+        height:10rem;
+    }
+    .left{
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+        left: 0;
+        flex-direction: column;
+    }
+    .left input{
+        width: 15rem;
+    }
+    #slider h1{
+        font-size: 3rem;
+    }
+    #items{
+        height: 150rem;
+    }
+    #tu{
+        
+        height: 10rem;
+    }
+    #tu h1{
+        font-size: 2rem;
+    
+    }
+    #About{
+        height: 128rem;
+    }
+    #slider {
+        height: 43rem;
+    }
+        
+}
